@@ -1,0 +1,15 @@
+* {
+  background-color: black;
+  color: white;
+  font-family: "Arial";
+}
+
+#clock {
+  font-size: 14vw;
+  text-align: center;
+  margin-top: 7vw;
+}
+#date {
+  font-size: 3vw;
+  
+}
