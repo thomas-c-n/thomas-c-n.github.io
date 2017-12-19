@@ -42,7 +42,9 @@ setInterval(reload, 1000);
 reload();
 
 
+//ALARM CLOCK
+var musicSource = 'goodMorning.mp3';
+var music = new Audio (musicSource);
 
-
-
+music.play();
 
