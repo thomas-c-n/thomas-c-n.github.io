@@ -1,0 +1,48 @@
+*{
+  text-align: center;
+}
+h1{
+  font-family:"Arial";
+  color: white;
+  padding-top: 2vw;
+}
+h2{
+  color: white;
+  padding-right: 15vw;
+  padding-left: 15vw;
+  font-family: "Arial";
+ 
+}
+body{
+  background-color: #b92d2d;
+}
+
+.header{
+  border-bottom: 1px solid gray;
+  margin: 0 20vw 0 20vw;
+}
+#present{
+  color: gray;
+  font-size: 50px;
+  font-family: "Abel", "Arial";
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+h3{
+  font-family: "Arial";
+  color:white;
+}
+
+.quiz{
+  margin-top: 1000vw;
+}
+h3:hover{
+  font-size: 22px;
+}
+
+
