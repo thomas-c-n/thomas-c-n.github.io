@@ -24,7 +24,11 @@ body{
 #present{
   color: gray;
   font-size: 50px;
-  font-family: "Abel", "Arial";
+  font-family: "Arial";
+}
+#present:hover{
+  width: 300px;
+  height: auto;
 }
 
 
