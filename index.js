@@ -4,6 +4,7 @@ function time() {
   var currentTime = new Date();
   var currentHours = currentTime.getHours() % 12;
   var currentMinutes = currentTime.getMinutes();
+  var currentSeconds = currentTime.getSeconds();
   var currentMonth = currentTime.getMonth();
   var currentDate = currentTime.getDate();
   
@@ -26,6 +27,15 @@ currentMonth = months[currentMonth];
 var currentDateString = currentMonth +' '+ currentDate;
 var date = document.getElementById('date');
 date.innerHTML = currentDateString;
+  
+  //ALARM CLOCK
+var musicSource = 'goodMorning.mp3';
+var music = new Audio (musicSource);
+if (currentHours === 2 && currentMinutes === 55 && currentSeconds === 0){
+  music.play();
+}
+  
+  
 }
 setInterval(time, 1000); //call the function every second
 time();
@@ -38,13 +48,10 @@ function reload() {
   window.location.reload(true);
   }
 }
-setInterval(reload, 1000);
+//call the reload function once every hour
+setInterval(reload, 3600000);
 reload();
 
 
-//ALARM CLOCK
-var musicSource = 'goodMorning.mp3';
-var music = new Audio (musicSource);
 
-music.play();
 
