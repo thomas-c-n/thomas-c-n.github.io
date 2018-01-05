@@ -1,7 +1,3 @@
-//ALARM CLOCK SETTINGS
-var goodMorning = 'goodMorning.mp3';
-var music = new Audio (goodMorning);
-
 
 
 //Date and time
@@ -32,14 +28,8 @@ currentMonth = months[currentMonth];
 var currentDateString = currentMonth +' '+ currentDate;
 var date = document.getElementById('date');
 date.innerHTML = currentDateString;
-  
-  //ALARM CLOCK
-if (currentHours === 11 && currentMinutes === 50 && currentSeconds === 00){
-  music.play();
 }
-  
-  
-}
+
 setInterval(time, 500); //call the function every half second
 time();
 
@@ -55,5 +45,15 @@ function reload() {
 setInterval(reload, 3600000);
 reload();
 
+//ALARM CLOCK
+function alarm(){
+  var goodMorning = 'goodMorning.mp3';
+  var music = new Audio (goodMorning);
+  if (currentHours === 10 && currentMinutes === 36 && currentSeconds === 00){
+    music.play();
+  }
+}
+
+setTimeout(alarm, 1000);
 
 
