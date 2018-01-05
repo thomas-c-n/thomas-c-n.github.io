@@ -34,7 +34,7 @@ var date = document.getElementById('date');
 date.innerHTML = currentDateString;
   
   //ALARM CLOCK
-if (currentHours === 11 && currentMinutes === 45 && currentSeconds === 00){
+if (currentHours === 11 && currentMinutes === 50 && currentSeconds === 00){
   music.play();
 }
   
