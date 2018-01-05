@@ -33,8 +33,8 @@ var currentDateString = currentMonth +' '+ currentDate;
 var date = document.getElementById('date');
 date.innerHTML = currentDateString;
   
-  //ALARM CLOCK EXECUTION
-if (currentHours === 3 && currentMinutes === 5 && currentSeconds === 0){
+  //ALARM CLOCK
+if (currentHours === 11 && currentMinutes === 45 && currentSeconds === 00){
   music.play();
 }
   
@@ -54,7 +54,6 @@ function reload() {
 //call the reload function once every hour
 setInterval(reload, 3600000);
 reload();
-
 
 
 
